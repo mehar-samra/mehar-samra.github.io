@@ -3,3 +3,8 @@ This blog is meant to keep track of all of my software work, both from industry 
 I am currently a software engineer at Photron USA, where 'm developing a cutting-edge, node-based platform for AI, CV, and ML pipelines that leverage real-time sensing data. My expertise includes CUDA-based GPU acceleration, machine learning, and 3D rendering.
 
 Outside of engineering, I enjoy spending time with family & friends, as well as staying active through fencing, surfing, and kickboxing. 
+
+
+INFINIWORKFLOW PRODUCT VIDEO: (Created by me!)
+[![What is Infiniworkflow?](/assets/infiniworkflow_youtube.jpg)](https://www.youtube.com/watch?v=ZeLcDBEy8LE)
+
