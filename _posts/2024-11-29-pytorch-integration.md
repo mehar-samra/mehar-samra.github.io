@@ -12,7 +12,7 @@ Building the tools for Classification and Segmentation quickly followed, using p
 
 ![Classification Workflow](/assets/ui_cifar_workflow.jpg)
 
-![Cifar Dataset](/assets/ui_cifar_dataset.gif)
+![Cifar Dataset](/assets/ui_cifar_dataset_gif.gif)
 
 After finally achieving the implementation of ML model creation, I then had to expand the available tools to ensure they were of practical use to ML engineers, as generally speaking most engineers probably have their own unique datasets they wish to train on, not just basic ones like CIFAR or MNIST. As such, custom dataset support is now operational in Infiniworkflow, with expanded capabilities for engineers that build their own plugins.
 
