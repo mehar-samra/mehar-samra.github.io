@@ -23,8 +23,8 @@ To get more storage on the Jetson Nano, you can connect a NVMe SSD to the Jetson
 
 The code to get Infiniworkflow running on Jetson was similar enough to the Linux code, but there were still a number of adjustments that had to be made because of the Jetson's extremely simple design (unlike on Windows or Mac). The Jetson now has its own folder within the Infiniworkflow directory, which now includes its own installer along with a script that adds OpenCV to Nvidia Jetson. A snippet of the code can be seen below:
 
-`
-// install the common dependencies
+```python
+/* install the common dependencies */
   sudo apt-get install -y cmake
   sudo apt-get install -y libjpeg-dev libjpeg8-dev libjpeg-turbo8-dev
   sudo apt-get install -y libpng-dev libtiff-dev libglew-dev
@@ -32,17 +32,17 @@ The code to get Infiniworkflow running on Jetson was similar enough to the Linux
   sudo apt-get install -y libgtk2.0-dev libgtk-3-dev libcanberra-gtk*
   sudo apt-get install -y python3-pip
   ...
-// remove old versions or previous builds
+/* remove old versions or previous builds */
   cd ~ 
   sudo rm -rf opencv*
-// download the latest version
+/* download the latest version */
   git clone --depth=1 https://github.com/opencv/opencv.git
   git clone --depth=1 https://github.com/opencv/opencv_contrib.git
-// set install dir
+/* set install dir */
   cd ~/opencv
   mkdir build
   cd build
-// run cmake
+/* run cmake */
   cmake -D CMAKE_BUILD_TYPE=RELEASE \
   -D BUILD_opencv_world=ON \
   -D CMAKE_INSTALL_PREFIX=/usr \
@@ -56,12 +56,12 @@ The code to get Infiniworkflow running on Jetson was similar enough to the Linux
   -D WITH_CUDNN=ON \
   ...
  ...
-// cleaning (frees 320 MB)
+/* cleaning (frees 320 MB) */
   make clean
   sudo apt-get update
   echo "Congratulations!"
   echo "You've successfully installed OpenCV 4.11.0 on your Nano"
-`
+```
 
 Adding access to Nvidia Jetson devices was important, as it means we can open up a new paradigm for integrating Infiniworkflow into daily usage by workers of any kind. Consider this example: a factory has Jetson machines, with Infiniworkflow running on the Jetson to monitor the assembly line, but workers from the company can log in from their home or office and connect to Infiniworkflow to create workflows, control the cameras, and create AI/ML inference workflows, all remotely. This is because Infiniworkflow would be running on the Jetson at all times, but the frontend could go to any PC, as long as it's connected to the local LAN or the internet.
 
