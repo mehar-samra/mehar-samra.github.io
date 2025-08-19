@@ -2,7 +2,7 @@
 
 Following the switch from Infiniworkflow being run on Flash to Django, we now have a number of new possibilities that were not as easily accessible before, including adding user authentication to the application. This provides a layer of security by requiring users to sign in before being able to access Infiniworkflow.
 
-This is not enabled by default, but can be enabled easily by your administrator by running a Python script to create a INFINIWORKFLOW superuser. A portion of the Python script can be found below:
+This is not enabled by default, but can be enabled easily by your administrator by running a Python script to create a INFINIWORKFLOW superuser. The idea is that administrators will have full access to Infiniworkflow, whereas non-admin workers will have to be added as users by the administrator. A portion of the Python script for creating a superuser can be found below:
 
 ```
     def create_superuser_programmatically(username, email, password):
@@ -36,7 +36,7 @@ With a superuser created, User Authentication is enabled. Now, when starting INF
 
 When a user is finished using Infiniworkflow, they may click "Yes" or "Save and Exit" to exit the application, or they may click "Logout", which saves the current workflow and logs out of the session, returning back to the login screen.
 
-As an Admin, you will have extended permissions that regular users won't, which includes making and removing users and groups. To access these controls, click on the Admin link and enter your admin username and password to continue. You will then reach a page like this, with all of the Admin controls available.
+Admin users will have extended permissions that regular users won't, which includes making and removing users and groups. These controls can be accessed by clicking on the Admin link, then entering the admin username and password, which will bring up a page like this that has all of the Admin controls available.
 
 ![Admin Page](/assets/ui_user_admin_page.jpg)
 
