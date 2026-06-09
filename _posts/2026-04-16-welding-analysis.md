@@ -13,13 +13,3 @@ However, when we tried to use SAM2 for automatic labels, the labels were decent 
 In this test example, we are segmenting and labeling the Welding Tip in a short video, with the image showing what the loading screen looks like as the automatic video propogation labeling is occurring.
 
 ![SAM2 Video Propogation](/assets/sam2_video_propogation.png)
-
-
-
-
-
-
-
-
-
-

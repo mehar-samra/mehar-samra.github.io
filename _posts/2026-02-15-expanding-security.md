@@ -17,11 +17,3 @@ Topple Detection - takes in a detection matrix and analyzes the person or object
 Aggression Detection - detects physical altercations or aggressive behavior by running 2 parallel inference models, Body Pose YOLOv8 and YuNET for tracking skeletal movement and facial expressions, respectively. The node takes in this data, and evaluates movement acceleration and emotional cues to determine if a conflict is occurring.
 
 ![Aggression Detection](/assets/aggression_detection.png)
-
-
-
-
-
-
-
-
